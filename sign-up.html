@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sign-up project</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="picture-container">
+        <img src="background-photo.jpg" alt="silla frente al lago" class="imagen-de-fondo">
+            <div id="logo-container">
+                <img src="odin-lined.png" alt="logo"> 
+                <h2>ODIN</h2>     
+            </div> 
+        <p>Photo by Sijmen Van Hooff on Unsplash</p>    
+        </div>
+        <div id="intro">
+            <p>This is not a real online service! You know you need something </p>
+            <p>like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up <span class="destacado">now</span>to get started</p>
+            <p>You <span class="destacado">know</span> you want to.</p>
+        </div>
+        <div id="formulario">
+            <form id="registro">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name"/>
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name"/>
+                    <p>
+                        <label for="user-email">Email</label>
+                        <input type="email" id="user-email" name="email"/>
+                        <label for="phone-number">Phone Number</label>
+                        <input type="number" id="phone-number" name="phone-number" />
+                    </p>
+                    <label for="psw">Password</label>
+                    <input type="password" id="psw" name="password"/>
+                    <label for="confirm-psw">Confirm Password</label>
+                    <input type="password" id="confirm-psw" name="password"/>
+                </fieldset>
+            </form>
+          
+        </div>
+        <div id="del-boton">
+            <button type="submit" id="create-account">Create an account</button>
+            <p id="sign-up">Already have an account? <span>Log in</span></p>
+        </div>
+    </div>
+</body>
+</html>
