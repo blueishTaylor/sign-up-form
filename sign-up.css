@@ -120,6 +120,10 @@ margin-top: 20px;
 #formulario{ 
     grid-column: 2;
     grid-row: 2;
+    background-color: white;
+    display: grid;
+    justify-content: left;
+    box-shadow: 0 6px 8px -2px rgba(0,0,0,0.3);
 }
 
 legend{
@@ -130,26 +134,61 @@ legend{
 fieldset{
     border: none;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content:center;
+    max-width: 500px;
     gap: 15px;
+    margin-left: 25px;
+    margin-top: 20px;
 }
 
-label{
-    display: block;
-    font-weight: bold;
+.campo{
+    display: flex;
+    flex-direction: column;
 }
-input{
-    display: block;
-    width: 250px;
+
+.campo label{
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.campo input{
     padding: 8px;
     font-size: 1rem;
+    border:2px solid #e0e0e0;
 }
 
 #del-boton{
     grid-column: 2;
     grid-row: 3;
+    padding-left: 30px;
+    gap: 10px;
 }
 
+#create-account {
+    background-color: #596D48;
+    border-radius: 8px;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 25px;
+    margin-left: 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#sign-up{
+    font-size: 1.1rem;
+}
+
+.log-in{
+    color: #596D48;
+    font-weight: bold;
+    cursor: pointer;
+
+}
 
